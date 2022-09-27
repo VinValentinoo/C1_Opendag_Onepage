@@ -41,13 +41,48 @@ body {
   transform: translate(-20%, -45%);
 }
 
-section {
+/* Section 1 vakken */
+
+section.vak-codelab {
   height: 100vh;
-  color: black;
+  color: whitesmoke;
+  /* background: linear-gradient(black, white 100%); */
 }
 
-section h1 {
+section.vak-codelab h1, section.vak-win h1 {
   padding-top: 300px;
   text-align: center;
   font-size: 80px;
+}
+
+section .vakken {
+  margin-top: 50px;
+  
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.vakken-text-align {
+  width: 80%;
+  text-align: center;
+}
+
+.codelab {
+  font-size: 60px;
+}
+
+.codelabT {
+  font-size: 50px;
+}
+
+/* Section 2 vak Windows */
+
+section.vak-win {
+  height: 100vh;
+  color: black
 }
