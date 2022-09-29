@@ -119,6 +119,16 @@ scene.on("update", e => {
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
+  console.log(delay)
 
   video.currentTime = delay;
-}, 33.3);
+  curioAnim.currentTime = delay;
+  devTextAnim.currentTime = delay;
+  kerstmanImgSlide.currentTime = delay;
+  sectionAnim.currentTime = delay;
+  vakTextAnim.currentTime = delay;
+  codelab.currentTime = delay;
+  codelabT.currentTime = delay;
+  codelabFadeIn.currentTime = delay;
+  codelabTFadeIn.currentTime = delay;
+}, 16.6);
