@@ -2,14 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
   
 body {
   font-family: sans-serif;
+  overflow: hidden;
 }
   
 .intro {
   height: 100vh;
+  overflow: hidden;
 }
 
 .intro video {
@@ -25,6 +28,8 @@ body {
   transform: translate(-50%, -50%);
   font-size: 100px;
   color: white;
+  overflow: hidden;
+  
 }
 .intro h1.dev {
   position: absolute;
@@ -33,6 +38,7 @@ body {
   transform: translate(-50%, -40%);
   font-size: 90px;
   color: white;
+  overflow: hidden;
 }
 .intro img.kerrie {
   position: absolute;
@@ -46,13 +52,13 @@ body {
 section.vak-codelab {
   height: 100vh;
   color: whitesmoke;
-  /* background: linear-gradient(black, white 100%); */
 }
 
-section.vak-codelab h1, section.vak-win h1 {
+section.vak-codelab h1, section.vak-win h1, section.vak-web h1, section.vak-gen h1 {
   padding-top: 300px;
   text-align: center;
   font-size: 80px;
+  overflow: hidden;
 }
 
 section .vakken {
@@ -74,22 +80,90 @@ section .vakken {
 
 .codelab {
   font-size: 60px;
+  overflow: hidden;
 }
 
 .codelabT {
   font-size: 50px;
+  overflow: hidden;
 }
 
 /* Section 2 vak Windows */
 
 section.vak-win {
   height: 100vh;
-  color: black
+  color: black;
+  overflow: hidden;
+
 }
 
-/* Section 3 vak Web */
-/* 
+.codeImg {
+  position: absolute;
+  /* width: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.windowsT {
+  overflow: hidden;
+}
+
+/* Vak web */
+
 section.vak-web {
   height: 100vh;
+  color: white;
+
+  text-align: center;
+}
+
+.web-background {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/webfoto.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.webT {
+  overflow: hidden;
+}
+
+/* Generieken vakken */
+
+section.vak-gen {
+  height: 100vh;
+  background: linear-gradient(#080806, white);
   color: black;
-} */
+}
+
+.vak {
+  width: 500px;
+  text-align: center; 
+}
+
+.vakken-content-align {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.engTitel, .engT, .nlTitel, .nlT, .rekenTitel, .rekenT{
+  overflow: hidden;
+}
+
+/* Rooster */
+
+section.rooster {
+  height: 100vh;
+  color: black;
+}
+
+.rooster .rooster-container {
+  margin-top: 50vh;
+  text-align: center;
+}
+
+.rooster-titel, .rooster-text {
+  overflow: hidden;
+}

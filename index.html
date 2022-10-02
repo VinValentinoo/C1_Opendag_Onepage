@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Vin Opendag</title>
   </head>
   <body>
     <div class="intro">
       <h1 class="curio">Curio</h1>
       <h1 class="dev">Software Developer</h1>
-      <img class="kerrie" src="kerstman.gif" alt="kerrie">
+      <img class="kerrie" src="img/kerstman.gif" alt="kerrie">
       <video src="video/backieblackie.mp4"></video>
     </div>
+    
     <section class="vak-codelab">
         <h1 class="vakT">Vakken</h1>
         <div class="vakken">
@@ -25,43 +27,85 @@
     </section>
 
     <section class="vak-win">
-        <h1 class="vakT">Windows development</h1>
-        <div class="vakken">
-            <div class="vakken-text-align">
-                <h2 class="windowsT"></h2>
-            </div>
-        </div>
+      <h1 class="vakT">Windows development</h1>
+      <div class="vakken">
+          <div class="vakken-text-align">
+              <h2 class="windowsT">Bij Windows development leer je in het eerste jaar Python en C#. De hashtag spreek je niet uit als hashtag, maar als sharp. Het is dus C sharp. Het is niet alleen voor windows, omdat je natuurlijk deze talen ook hebt voor iOS. Daarom is de naam ook veranderd naar Native. Dit houd dus in dat op elk platform met een bepaalde taal kan programmeren.</h2>
+              
+          </div>
+      </div>
+      <img class="codeImg" src="img/code.png" alt="code" >
     </section>
 
     <section class="vak-web">
-      <h1 class="vakT">Web development</h1>
-      <div class="vakken">
+      <div class="web-background">
+        <h1 class="vakT">Web development</h1>
+        <div class="vakken">
           <div class="vakken-text-align">
-              <h2 class="webT"></h2>
+            <h2 class="webT">Bij web development leer je alles wat te maken heeft met web, denk hier aan HTML, CSS, JS, Laravel en Php. In het begin van het jaar leer je de basic van html en de basic van css. In het begin leer je het eigenlijk de moeilijke manier. Je moet dus bijvoorbeeld echt alles zelf gaan maken terwijl er op internet al voorbeelden staan die je eventueel zou kunnen gebruiken.</h2>
           </div>
+        </div>
       </div>
+    </section>
+
+  <section class="vak-gen">
+    <div class="vak-gen-fadein-anim">
+      <h1 class="vakT">Generieken vakken</h1>
+      <div class="vakGeneriek">
+        <div class="vakken-content-align">
+          <div class="vak">
+            <div class="vak-eng">
+              <h2 class="engTitel">Engels</h2>
+              <h3 class="engT">Bij Engels begin je eigenlijk gelijk met opdrachten maken, als je een opdracht blok hebt afgerond maak je een toets. Je moet voor elk blok een toets hebben gemaakt wil je voor examen op gaan voor het vak.</h3>
+            </div>
+          </div>
+          <div class="vak">
+            <div class="vak-nl">
+              <h2 class="nlTitel">Nederlands</h2>
+              <h3 class="nlT">Bij Nederlands is het eigenlijk het zelfde verhaal, je maakt opdrachten en krijgt ook uitleg in de les. Je gaat ook heel veel bezig zijn met teksten schrijven. Dit zijn dan zakelijke teksten, zodat je eraan kunt  wennen om zakelijk te gaan schrijven.</h3>
+            </div>
+          </div>
+          <div class="vak">
+            <div class="vak-rekenen">
+              <h2 class="rekenTitel">Rekenen</h2>
+              <h3 class="rekenT">Bij Rekenen begint de les met uitleg over wat je moet gaan doen en daarna moet je opdrachten gaan maken. Ook bij dit vak moet je alle blokken hebben afgerond wil je opgegeven worden voor examen.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
-      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
-      crossorigin="anonymous"
-    ></script> -->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
-      integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
-      crossorigin="anonymous"
-    ></script> -->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
-      integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
-      crossorigin="anonymous"
-    ></script> -->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script> -->
+  <section class="rooster">
+    <div class="rooster-container">
+      <h1 class="rooster-titel">Rooster</h1>
+      <h2 class="rooster-text">Hieronder staat een knop waar je op kunt klikken, als je er op klinkt zie je het rooster van een eerstejaars. </h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Klik hier om rooster te zien
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Rooster</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/rooster1ejaars.png" alt="rooster">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity= "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity= "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
