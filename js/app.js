@@ -3,7 +3,7 @@ const video = intro.querySelector("video");
 const curio = intro.querySelector("h1.curio");
 const dev = intro.querySelector("h1.dev");
 const kerrie = intro.querySelector("img.kerrie")
-//END SECTION
+//SECTION
 const section = document.querySelector("section.vak-codelab");
 const vakText = section.querySelector("h1.vakT");
 // Windows section
@@ -14,6 +14,8 @@ const webSection = document.querySelector("section.vak-web");
 const webText = webSection.querySelector("h1.vakT");
 // Generieken vakken
 const genSection = document.querySelector("section.vak-gen");
+// End
+const endSection = document.querySelector("section.end");
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
@@ -21,6 +23,7 @@ const vakController = new ScrollMagic.Controller();
 const winController = new ScrollMagic.Controller();
 const webController = new ScrollMagic.Controller();
 const genController = new ScrollMagic.Controller();
+const endController = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
@@ -28,7 +31,6 @@ let scene = new ScrollMagic.Scene({
   triggerElement: intro,
   triggerHook: 0
 })
-  .addIndicators()
   .setPin(intro)
   .addTo(controller);
 
@@ -78,7 +80,6 @@ let scene2 = new ScrollMagic.Scene({
   triggerElement: section,
   triggerHook: 0,
 })
-  .addIndicators()
   .setTween(sectionAnim)
   .setPin(section)
   .addTo(vakController);
@@ -132,7 +133,6 @@ let winScene = new ScrollMagic.Scene({
   triggerElement: winSection,
   triggerHook: 0
 })
-  .addIndicators()
   .setTween(winTextAnim)
   .setPin(winSection)
   .addTo(winController);
@@ -161,12 +161,9 @@ let webScene = new ScrollMagic.Scene({
   triggerElement: webSection,
   triggerHook: 0
 })
-  .addIndicators()
   .setTween(webSectionFade)
   .setPin(webSection)
   .addTo(webController);
-
-
 
 // Generieken vakken
 
@@ -180,7 +177,6 @@ let genScene = new ScrollMagic.Scene({
   triggerElement: genSection,
   triggerHook: 0
 })
-  .addIndicators()
   .setTween(genTextFade)
   .setPin(genSection)
   .addTo(genController);
@@ -193,6 +189,19 @@ let delay = 0;
 scene.on("update", e => {
   scrollpos = e.scrollPos / 1000;
 });
+
+// End scene
+
+const endSectionAnim = TweenMax.fromTo(endSection, 3 , {backgroundColor:'white'}, {duration: 3, backgroundColor: 'black', ease:"linear"});
+
+let endScene = new ScrollMagic.Scene({
+  duration: 5000,
+  triggerElement: endSection,
+  triggerHook: 0
+})
+  .setTween(endSectionAnim)
+  .setPin(endSection)
+  .addTo(endController);
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
